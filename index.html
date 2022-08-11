@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Casino.loader.js";
+      var loaderUrl = buildUrl + "/Game.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Casino.data.gz",
-        frameworkUrl: buildUrl + "/Casino.framework.js.gz",
-        codeUrl: buildUrl + "/Casino.wasm.gz",
+        dataUrl: buildUrl + "/Game.data.unityweb",
+        frameworkUrl: buildUrl + "/Game.framework.js.unityweb",
+        codeUrl: buildUrl + "/Game.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Casino",
@@ -99,7 +99,7 @@
         canvas.style.height = "600px";
       }
 
-      canvas.style.background = "url('" + buildUrl + "/Casino.jpg.gz') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/Game.jpg.unityweb') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
